@@ -1,5 +1,5 @@
 export const WEDDING_INVITATION_URL = "http://localhost:8000/";
-export const KAKAOTALK_API_TOKEN = "8368b3ac5111e6029f59a1d56d756cb4";
+export const KAKAOTALK_API_TOKEN = process.env.KAKAOTALK_API_TOKEN;
 export const KAKAOTALK_SHARE_IMAGE =
   "https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607_960_720.jpg";
 
