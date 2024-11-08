@@ -69,10 +69,4 @@
   font-display: swap;
 }
 
-.gallery-wrapper {
-  text-align: center;
-}
-.ReactGridGallery > div {
-  display: flex;
-  justify-content: center;
-}
+

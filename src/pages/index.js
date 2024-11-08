@@ -20,6 +20,7 @@ import GalleryPhoto0 from "../assets/photo/photo0.jpeg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import WeddingCalendar from "../components/calendar";
 
 // markup
 const { Footer } = Layout;
@@ -67,6 +68,7 @@ const IndexPage = () => {
       </Helmet>
       <Title />
       <Greeting />
+      <WeddingCalendar />
       <Gallery />
       <Location />
       <Quote />
@@ -80,7 +82,7 @@ const IndexPage = () => {
           textAlign: "center",
         }}
       >
-        Copyright © 2025 Moon Daeseong
+        Copyright © 2025 승아가 시켜서 만듦 🤧
       </Footer>
     </Wrapper>
   );
