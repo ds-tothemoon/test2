@@ -3,7 +3,8 @@ export const KAKAOTALK_API_TOKEN = process.env.KAKAOTALK_API_TOKEN;
 export const KAKAOTALK_SHARE_IMAGE =
   "https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607_960_720.jpg";
 
-export const WEDDING_DATE = "2025년 10월 26일, 일요일 오전 12시 10분";
+export const WEDDING_DATE = "2025년 10월 26일, 일요일";
+export const WEDDING_TIME = "오전 12시 10분";
 export const WEDDING_LOCATION = "더파티움 여의도, 2층 파티움홀";
 
 export const GROOM_NAME = "문대성";

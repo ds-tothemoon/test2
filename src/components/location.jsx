@@ -29,6 +29,17 @@ const Content = styled.p`
   line-height: 1.75;
   opacity: 0.75;
   width: 100%;
+  text-align: start;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  margin: 0;
+`;
+
+const HallContent = styled.p`
+  font-size: 0.875rem;
+  line-height: 1.75;
+  opacity: 0.75;
+  width: 100%;
   text-align: center;
   padding-top: 42px;
   padding-bottom: 42px;
@@ -103,12 +114,14 @@ const Location = () => {
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
-        서울 영등포구 은행로 30 
+        <HallContent>
+          서울 영등포구 은행로 30
+          <br />
+          더파티움 여의도 2층 파티움홀
+        </HallContent>
         <br />
-        더파티움 여의도 2층 파티움홀
         <br />
-        <br />
-        <Title>지하철 이용시</Title>
+        <Title>🚇 지하철 이용시</Title>
         <br />
         <br />
         9호선 국회의사당역 3번 출구 (도보 5분)
@@ -116,18 +129,17 @@ const Location = () => {
         5호선 여의나루역 2번 출구 (버스 11분)
         <br />
         <br />
-        <Title>버스 이용시</Title>
+        <Title>🚌 버스 이용시</Title>
         <br />
         <br />
-        기계회관(19-320) [일반] 10, [마을] 영등포10
+        기계회관: 10, 영등포10
         <br />
-        산업은행본점(19-281) [일반] 10, [간선] 463, [마을] 영등포10
+        산업은행본점: 10, 463, 영등포10
         <br />
-        여의도순복음교회(19-303) [일반] 10, [간선] 463, [지선] 5563, [마을] 영등포10
+        여의도순복음교회: 10, 463, 5563, 영등포10
         <br />
-        여의도환승센터(19-016) [일반] 88, [간선] 급행8600, 8601 [간선] N16, 160, 260, 360, 600, 662
-        <br />
-        여의도환승센터(19-008) [간선] N16, 160, 260, 360, 600, 662 [지선] 5012, 6623, 6628
+        여의도환승센터: 88, N16, 160, 260, 360, 600, 662, 5012, 6623, 6628,
+        급행8600, 8601
         <br />
       </Content>
     </Wrapper>
