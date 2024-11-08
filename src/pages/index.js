@@ -36,6 +36,11 @@ const IndexPage = () => {
     script.async = true;
     script.src = "https://developers.kakao.com/sdk/js/kakao.min.js";
     document.body.appendChild(script);
+    
+    // 오른쪽 클릭 막기
+    document.addEventListener('contextmenu', function(event) {
+      event.preventDefault();
+    });
 
     return () => {
       document.body.romoveChile(script);
