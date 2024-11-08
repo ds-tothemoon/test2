@@ -7,8 +7,7 @@ import {
   GROOM_NAME,
   BRIDE_NAME,
 } from "../../config.js";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4";
-import GroovePaper from "../assets/GroovePaper.png";
+import WeddingPhoto from "../assets/WeddingPhoto.jpg";
 
 const Layout = styled.div`
   width: 70%;
@@ -28,7 +27,10 @@ const TitleWrapper = styled.div`
   -o-animation: fadein 3s; /* Opera */
 `;
 
-const VideoBackground = styled.video`
+const ImageBackground = styled.image`
+  display: flex;
+  justify-content: center;  /* 가로 중앙 정렬 */
+  align-items: center;      /* 세로 중앙 정렬 */
   width: 100%;
 `;
 
@@ -66,9 +68,12 @@ const Title = () => {
           {WEDDING_LOCATION}
         </Schedule>
       </TitleWrapper>
-      <VideoBackground autoPlay loop muted playsInline={true}>
-        <source src={BackgroundVideo} type="video/mp4" />
-      </VideoBackground>
+      <ImageBackground>
+        <img src={WeddingPhoto} alt="wedding photo" 
+          style={{ width: '300px', height: 'auto' }}
+        />
+      </ImageBackground>
+      
     </Layout>
   );
 };
