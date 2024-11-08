@@ -16,6 +16,8 @@ import Share from "../components/share";
 import Quote from "../components/quote";
 import Song from "../assets/song.mp3";
 
+import GalleryPhoto0 from "../assets/photo/photo0.jpeg";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -52,6 +54,10 @@ const IndexPage = () => {
       </audio>
       <Helmet>
         <title>대성❤️승아 결혼합니다 🎉</title>
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="대성❤️승아 결혼합니다 🎉" />
+      <meta property="og:site_name" content="대성❤️승아 결혼합니다 🎉" />
+      <meta property="og:image" content={GalleryPhoto0} />
       </Helmet>
       <Title />
       <Greeting />
