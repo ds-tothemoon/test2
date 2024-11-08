@@ -38,9 +38,9 @@ const IndexPage = () => {
     document.body.appendChild(script);
     
     // 오른쪽 클릭 막기
-    document.addEventListener('contextmenu', function(event) {
-      event.preventDefault();
-    });
+    // document.addEventListener('contextmenu', function(event) {
+    //   event.preventDefault();
+    // });
 
     return () => {
       document.body.romoveChile(script);
