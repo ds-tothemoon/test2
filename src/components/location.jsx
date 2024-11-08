@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Divider } from "antd";
 import styled from "styled-components";
 import Flower from "../assets/flower2.png";
+import { KAKAOTALK_API_TOKEN } from "../../config";
 
 const Wrapper = styled.div`
   padding-top: 42px;
@@ -29,18 +30,18 @@ const Content = styled.p`
   line-height: 1.75;
   opacity: 0.75;
   width: 100%;
-  text-align: start;
+  text-align: center;
   padding-top: 42px;
   padding-bottom: 42px;
   margin: 0;
 `;
 
-const HallContent = styled.p`
+const ContentDetail = styled.p`
   font-size: 0.875rem;
   line-height: 1.75;
   opacity: 0.75;
   width: 100%;
-  text-align: center;
+  text-align: start;
   padding-top: 42px;
   padding-bottom: 42px;
   margin: 0;
@@ -114,32 +115,37 @@ const Location = () => {
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
-        <HallContent>
-          서울 영등포구 은행로 30
-          <br />
-          더파티움 여의도 2층 파티움홀
-        </HallContent>
+        서울 영등포구 은행로 30
+        <br />
+        더파티움 여의도 2층 파티움홀
         <br />
         <br />
         <Title>🚇 지하철 이용시</Title>
         <br />
         <br />
+        <ContentDetail>
         9호선 국회의사당역 3번 출구 (도보 5분)
         <br />
         5호선 여의나루역 2번 출구 (버스 11분)
+        </ContentDetail>
         <br />
-        <br />
+        <br />        
         <Title>🚌 버스 이용시</Title>
         <br />
         <br />
+        <ContentDetail>
         기계회관: 10, 영등포10
         <br />
         산업은행본점: 10, 463, 영등포10
         <br />
         여의도순복음교회: 10, 463, 5563, 영등포10
         <br />
-        여의도환승센터: 88, N16, 160, 260, 360, 600, 662, 5012, 6623, 6628,
+        여의도환승센터: 88, N16, 160, 260, 
+        <br/>
+        360, 600, 662, 5012, 6623, 6628,
+        <br />
         급행8600, 8601
+        </ContentDetail>
         <br />
       </Content>
     </Wrapper>

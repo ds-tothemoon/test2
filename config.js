@@ -1,5 +1,5 @@
-export const WEDDING_INVITATION_URL = "http://localhost:8000/";
-export const KAKAOTALK_API_TOKEN = process.env.KAKAOTALK_API_TOKEN;
+export const WEDDING_INVITATION_URL = process.env.GATSBY_APP_URL;
+export const KAKAOTALK_API_TOKEN = process.env.GATSBY_KAKAOTALK_API_TOKEN;
 export const KAKAOTALK_SHARE_IMAGE =
   "https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607_960_720.jpg";
 

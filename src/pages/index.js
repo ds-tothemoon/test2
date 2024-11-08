@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Layout } from "antd";
 import styled from "styled-components";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -49,6 +50,9 @@ const IndexPage = () => {
       <audio autoPlay loop>
         <source src={Song} />
       </audio>
+      <Helmet>
+        <title>대성❤️승아 결혼합니다 🎉</title>
+      </Helmet>
       <Title />
       <Greeting />
       <Gallery />

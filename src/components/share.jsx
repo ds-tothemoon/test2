@@ -67,7 +67,6 @@ const Share = () => {
         // 두번째 step 에서 가져온 javascript key 를 이용하여 initialize
         kakao.init(KAKAOTALK_API_TOKEN);
       }
-
       kakao.Link.createDefaultButton({
         objectType: "feed",
         container: "#sendKakao",
