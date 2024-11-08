@@ -121,18 +121,12 @@ const Location = () => {
         <br />
         <br />
         <Title>🚇 지하철 이용시</Title>
-        <br />
-        <br />
         <ContentDetail>
         9호선 국회의사당역 3번 출구 (도보 5분)
         <br />
         5호선 여의나루역 2번 출구 (버스 11분)
         </ContentDetail>
-        <br />
-        <br />        
         <Title>🚌 버스 이용시</Title>
-        <br />
-        <br />
         <ContentDetail>
         기계회관: 10, 영등포10
         <br />
@@ -146,7 +140,6 @@ const Location = () => {
         <br />
         급행8600, 8601
         </ContentDetail>
-        <br />
       </Content>
     </Wrapper>
   );
