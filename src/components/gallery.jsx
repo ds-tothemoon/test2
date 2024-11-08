@@ -20,10 +20,6 @@ const Title = styled.p`
   text-align: center;
 `;
 
-const PhotoGallery = styled.div`
-  margin-left: 8px;
-`;
-
 const WeddingGallery = () => {
   const [index, setIndex] = useState(-1);
   const currentImage = photos[index];
@@ -42,29 +38,27 @@ const WeddingGallery = () => {
       <Divider style={{ marginTop: 0, marginBottom: 32, width: "70%" }} plain>
         <Title>우리의 아름다운 순간</Title>
       </Divider>
-      <PhotoGallery>
-        <Gallery
-          images={photos}
-          onClick={handleClick}
-          enablephotoselection={false}
-          rowHeight={120}
+      <Gallery
+        images={photos}
+        onClick={handleClick}
+        enablephotoselection={false}
+        rowHeight={100}
+      />
+      {!!currentImage && (
+        <Lightbox
+          mainSrc={currentImage.original}
+          imageTitle={currentImage.caption}
+          mainSrcsrc={currentImage.src}
+          nextSrc={nextImage.original}
+          nextSrcsrc={nextImage.src}
+          prevSrc={prevImage.original}
+          prevSrcsrc={prevImage.src}
+          onCloseRequest={handleClose}
+          onMovePrevRequest={handleMovePrev}
+          onMoveNextRequest={handleMoveNext}
+          enableZoom={false}
         />
-        {!!currentImage && (
-          <Lightbox
-            mainSrc={currentImage.original}
-            imageTitle={currentImage.caption}
-            mainSrcsrc={currentImage.src}
-            nextSrc={nextImage.original}
-            nextSrcsrc={nextImage.src}
-            prevSrc={prevImage.original}
-            prevSrcsrc={prevImage.src}
-            onCloseRequest={handleClose}
-            onMovePrevRequest={handleMovePrev}
-            onMoveNextRequest={handleMoveNext}
-            enableZoom={false}
-          />
-        )}
-      </PhotoGallery>
+      )}
     </Wrapper>
   );
 };
