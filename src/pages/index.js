@@ -56,6 +56,7 @@ const IndexPage = () => {
         <title>대성❤️승아 결혼합니다 🎉</title>
       <meta property="og:type" content="website" />
       <meta property="og:title" content="대성❤️승아 결혼합니다 🎉" />
+      <meta property="og:description" content="10월 26일 오전 12시 10분" />
       <meta property="og:site_name" content="대성❤️승아 결혼합니다 🎉" />
       <meta property="og:image" content={GalleryPhoto0} />
       </Helmet>
