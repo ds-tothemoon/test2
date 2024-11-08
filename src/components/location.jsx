@@ -47,10 +47,10 @@ const Location = () => {
   const executeScript = () => {
     const scriptTag = document.createElement("script");
     const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-    "timestamp" : "1652464367301",
-    "key" : "2a8fe",
-    "mapWidth" : "640",
-    "mapHeight" : "360"
+		"timestamp" : "1731043384936",
+		"key" : "2m6nm",
+		"mapWidth" : "640",
+		"mapHeight" : "360"
   }).render();`);
     scriptTag.appendChild(inlineScript);
     document.body.appendChild(scriptTag);
@@ -99,27 +99,36 @@ const Location = () => {
       </Divider>
       <Image src={Flower} />
       <Map
-        id="daumRoughmapContainer1652464367301"
+        id="daumRoughmapContainer1731043384936"
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
-        대구 수성구 두산동 888-2번지
+        서울 영등포구 은행로 30 
         <br />
-        호텔수성 수성스퀘어 3층 피오니홀
-        <br />
-        <br />
-        <Title>버스 이용시</Title>
-        <br />
-        <br />
-        410-1, 401 호텔수성 앞 하차
-        <br />
-        수성1-1, 수성3-1, 814 TBC방송국 앞 하차
+        더파티움 여의도 2층 파티움홀
         <br />
         <br />
         <Title>지하철 이용시</Title>
         <br />
         <br />
-        3호선 수성못역 하차 (도보 10분)
+        9호선 국회의사당역 3번 출구 (도보 5분)
+        <br />
+        5호선 여의나루역 2번 출구 (버스 11분)
+        <br />
+        <br />
+        <Title>버스 이용시</Title>
+        <br />
+        <br />
+        기계회관(19-320) [일반] 10, [마을] 영등포10
+        <br />
+        산업은행본점(19-281) [일반] 10, [간선] 463, [마을] 영등포10
+        <br />
+        여의도순복음교회(19-303) [일반] 10, [간선] 463, [지선] 5563, [마을] 영등포10
+        <br />
+        여의도환승센터(19-016) [일반] 88, [간선] 급행8600, 8601 [간선] N16, 160, 260, 360, 600, 662
+        <br />
+        여의도환승센터(19-008) [간선] N16, 160, 260, 360, 600, 662 [지선] 5012, 6623, 6628
+        <br />
       </Content>
     </Wrapper>
   );
